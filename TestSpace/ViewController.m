@@ -26,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)createAlbum:(id)sender {
+    // Get the name of the album from the text field
+    NSString *albumName = self.albumNameField.text;
+    
+    // Kexin writes code using ALAssetsLibrary addAssetsGroupAlbumWithName
+    
+    // Just a confirmation message
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Album Added" message:albumName delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [message show];
+}
 @end

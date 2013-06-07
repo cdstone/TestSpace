@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *albumNameField;
+- (IBAction)createAlbum:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *albumLabel;
+
 @end
